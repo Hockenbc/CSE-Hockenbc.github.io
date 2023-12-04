@@ -1,5 +1,5 @@
 body {
-background: DarkSeaGreen;
+background: Thistle;
 font-family: sans-serif;
 }
 h1 {
@@ -10,7 +10,7 @@ text-align: center;
 display: flex;
 padding: 10px;
 margin: 10px;
-background: BurlyWood;
+background: Lavender;
 }
 .assign img {
 width: 200px;
