@@ -1,18 +1,40 @@
 body {
 background: Thistle;
 font-family: sans-serif;
+display: flex;
+flex-wrap: wrap;
 }
 h1 {
 color: White;
 text-align: center;
+width: 100%
+display: block;
 }
+h1:hover {
+  color: grey;
+  text-align: center;
+  width: 100%
+  display: block;
+}
+a {
+  text-decoration: none;
+  color: black;
 .assign {
-display: flex;
+display: block;
 padding: 10px;
 margin: 10px;
+border-radius: 10px;
 background: Lavender;
+width: 20%
+box-shadow: 8px 8px brown;
 }
 .assign img {
 width: 200px;
 padding: 10px;
+border: 2px solid #BB8FCE;
+
 }
+.assign img:hover {
+  width: 200px;
+  margin: 10px;
+  border: 2px dotted silver;
