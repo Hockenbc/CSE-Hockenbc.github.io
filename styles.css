@@ -11,8 +11,8 @@ width: 100%
 display: block;
 }
 h1:hover { 
+  color: DarkSlateBlue;
   text-align: center;
-  color: grey;3
   width: 100%
   display: block;
 }
