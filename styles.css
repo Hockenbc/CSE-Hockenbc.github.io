@@ -10,31 +10,33 @@ text-align: center;
 width: 100%
 display: block;
 }
-h1:hover {
-  color: grey;
+h1:hover { 
   text-align: center;
+  color: grey;3
   width: 100%
   display: block;
 }
 a {
   text-decoration: none;
   color: black;
+}
 .assign {
-display: block;
-padding: 10px;
+background-color: Lavender;
 margin: 10px;
+padding: 10px;
 border-radius: 10px;
-background: Lavender;
 width: 20%
-box-shadow: 8px 8px brown;
+box-shadow: 8px 8px DarkSlateBlue;
+display: block;
 }
 .assign img {
 width: 200px;
 padding: 10px;
-border: 2px solid #BB8FCE;
+border: 2px solid MediumPurple;
 
 }
 .assign img:hover {
   width: 200px;
   margin: 10px;
-  border: 2px dotted silver;
+  border: 2px dotted SlateBlue;
+}
