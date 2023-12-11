@@ -30,13 +30,13 @@ box-shadow: 8px 8px DarkSlateBlue;
 display: block;
 }
 .assign img {
-width: 200px;
+width: 100px;
 padding: 10px;
 border: 2px solid MediumPurple;
 
 }
 .assign img:hover {
-  width: 200px;
+  width: 100px;
   margin: 10px;
   border: 2px dotted SlateBlue;
 }
