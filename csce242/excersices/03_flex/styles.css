@@ -1,0 +1,79 @@
+/* Structure*/
+body{
+    background: url("images/ocean_bg.png");
+    font-family:Arial, Helvetica, sans-serif;
+}
+#content {
+    width: 90%;
+    margin: auto;
+    background: lightseagreen;
+    border-radius: 5px;
+}
+
+#species section{
+    background: greenyellow;
+    padding: 5px;
+    margin: 5px;
+}
+#main-aside{
+    background:salmon;
+}
+#news-section{
+    background:cyan;
+}
+img{
+    max-width:100%;
+}
+#main-header{
+    background: powderblue;
+    border-radius: 5px;
+}
+#main-footer{
+    background:green;
+    
+}
+
+#main-nav li {
+    list-style:none;
+    border-bottom: 1px solid pink;
+}
+#main-nav a{
+    text-decoration: none;
+    padding:5px;
+    background:black;
+    color:yellow;
+    display: block;
+}
+
+/* Typography*/ 
+#main-footer p {
+    text-align: center;
+}
+/*Media queries*/
+
+/* will apear vertically or horizontally based on the device */
+@media only screen and(min-width:600px){
+    .columns{
+        display:flex;
+    }
+    .one{
+        flex:1;
+    }
+    .two{
+        flex:2;
+    }
+    .three{
+        flex:3;
+    }
+    .four{
+        flex:4;
+    }
+
+    #main-nav li{
+        flex:1;
+    }
+
+}
+@media only screen and(min-width:768px){
+
+}

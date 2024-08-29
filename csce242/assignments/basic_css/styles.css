@@ -1,0 +1,104 @@
+/* Strcuture */
+body {
+    background-image: url(https://www.americanoceans.org/wp-content/uploads/2023/08/what-do-sea-bunnies-eat-1536x1152.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#page {
+    background: #D99B66;
+    padding:5px;
+    margin:30px auto;
+    width: 75%;
+    border: 4px solid #4a3421;
+    border-radius: 15px;
+    
+     
+}
+#content {
+    background: #d7a77c;
+    margin: 25px auto;
+    margin-left: 15px;
+    margin-right: 15px;
+    border: 3px solid #65472d;
+    border-radius: 15px;
+
+}
+/*Navigation */
+#main-nav ul{
+    padding-left:0; 
+    text-align: center;
+} 
+/* No more Bullets */
+#main-nav li{
+    list-style-type: none;
+    display: inline-block;
+    text-align: center;
+}
+
+#main-nav a{
+    text-decoration: none;
+    background: #BF7417;
+    color:#F2CDAC;
+    padding: 5px;
+    margin: 5px auto;
+    border-radius: 13px;
+    text-align: center;
+}
+    
+#main-nav a:hover {
+    background-color: #593616;
+    color:#D99B66;
+    text-align: center;
+}
+
+#paragraph {
+    background: #efc097b4;
+    padding: 5px;
+    margin: 12px auto;
+    margin-left: 15px;
+    margin-right: 15px;
+    border: 3px solid #5b46328a;
+    border-radius: 15px;
+}
+#image-01 {
+    background: #efc097b4;
+    padding: 5px;
+    margin: 12px auto;
+    margin-left: 15px;
+    margin-right: 15px;
+    border: 3px solid #5b46328a;
+    border-radius: 15px;
+}
+#image-02 {
+    background: #efc097b4;
+    padding: 5px;
+    margin: 12px auto;
+    margin-left: 15px;
+    margin-right: 15px;
+    border: 3px solid #5b46328a;
+    border-radius: 15px;
+}
+#table{
+    background: #efc097b4;
+    padding: 5px;
+    margin: 12px auto;
+    margin-left: 15px;
+    margin-right: 15px;
+    border: 3px solid #5b46328a;
+    border-radius: 15px;
+}
+
+/* Typography */
+
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+p {
+    text-align: right;
+} 
