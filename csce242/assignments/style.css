@@ -1,52 +1,79 @@
 /* Structure*/
 
 body{
-    background: #8c6f6f;
+    background: #d2d4dc;
     font-family: Arial, Helvetica, sans-serif;
     color:#362727
 }
 #content{
-    width: 80%;
+    width: 90%;
     margin: 10px auto;
-    background:#d0b7a1;
-    border:#6c4f4f;
+    background:#e5e6eb;
+    border:#afafaf;
     border-radius: 5px;
-   
-}
-
-#para{
-    padding: 0;
-    margin: 15px;
-    border: solid #6c4f4f;
-    border-radius: 5px;
-}
-#main-nav a{
-    width: 30%;
-    text-decoration: none;
-    border: 5px #6c4f4f;
-    border-radius: 5px;
-    color:#362727;
 }
 #main-header{
-    background: #ac8f76de;
-    border: 4px solid #6c4f4f;
+    background: #c0c2ce;
+    border: 4px solid #afafaf;
     border-radius: 5px;
 }
 #main-content{
     padding: 0;
-    margin: -1px auto;
-    background: #d2b49ade;
-    border: solid #6c4f4f;
-    border-radius: 5px;
+    margin: 1px auto;
+    background: #e5e6eb;
+    
+    border-radius: 15px;
+}
+#species section{
+    background:#8c9da9;
+    padding: 5px;
+    margin:5px;
+    border: 4px solid #afafaf;
+    border-radius: 15px;
+}
+#work section{
+    background: #e5e6eb;
+    text-align: center;
+}
+img{
+    max-width: 100%;
+    margin:5px;
+    border: 4px solid #afafaf;
+    border-radius: 15px;
 }
 
 h1{
     text-align: center;
 }
-h3{
+h2{
     padding: 0;
     margin: 15px;
-}
-h4{
     text-align: center;
+}
+/* Typography*/
+#main-footer p{
+    text-align: center;
+}
+
+@media only screen and (min-width:600px){
+    .columns{
+        display:flex;
+    }
+    .one{
+        flex:1;
+    }
+    .two{
+        flex:2;
+    }
+    .three{
+        flex:3;
+    }
+
+    #main-nav li{
+        flex:1;
+    }
+
+}
+@media only screen and (min-width:768px){
+
 }
