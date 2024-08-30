@@ -30,6 +30,7 @@ body {
     border: 4px solid #624831c3;
 }
 #table section{
+    padding:0;
     border-collapse: collapse;
     background:#F2CDAC;
 }
