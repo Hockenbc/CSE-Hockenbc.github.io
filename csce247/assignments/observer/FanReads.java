@@ -1,42 +1,40 @@
+/*
+ * By: Courtney Hockenberry
+ */
 package observer;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 public class FanReads implements Observer{
     private final Subject subject;
-    private final String firtName;
-    private final String lastName;
     private final Map<Genre, ArrayList<Book>> recommendations;
 
     public FanReads(Subject subject, String firstName, String lastName) {
         this.subject = subject;
-        this.firstName = firstName;
-        this.lastName = lastName;
         this.recommendations = new HashMap<>();
 
-        for (Genre genre : Genre.values()) {
-            recommendations.put(genre, new ArrayList<>());
-        }
         subject.registerObserver(this);
     }
 
+    @Override
     public void update(Book book) {
         //get the genre
-        Genre genre = book.getGenre();
-        ArrayList<Book> genreList = recommendations.get(genre);
-        if (genreList != null) {
-            genreList.add(book);
+        if(recommendations.get(book.getGenre())==null){
+            ArrayList<Book> gl = new ArrayList<>();
+            gl.add(book);
+            recommendations.put(book.getGenre(), gl);
         }
-        System.out.println("Updated recommendations with: " + book);
+        else{
+            ArrayList<Book> gl = recommendations.get(book.getGenre());
+            gl.add(book);
+            recommendations.put(book.getGenre(), gl);
+        }
     }
     public ArrayList<Book> getRecommendations(Genre genre) {
-        return recommendations.getOrDefault(genre, new ArrayList<>());
+        return recommendations.get(genre);
     }
-    public String toString() {
-        return firstName + " " + lastName;
-    }
-    
+ 
 }
+

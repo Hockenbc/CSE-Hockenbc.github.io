@@ -1,5 +1,8 @@
+/*
+ * By: Courtney Hockenberry
+ */
 package observer;
 
 public interface Observer{
-    void update(Book book);
+    public void update(Book book);
 }

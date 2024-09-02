@@ -1,11 +1,15 @@
+/*
+ * By: Courtney Hockenberry
+ */
 package observer;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class BestSellers implements Subject{
-    private final List<Observer> observer = new ArrayList<>();
+    private final List<Observer> observers = new ArrayList<>();
     private final List<Book> bestSellers = new ArrayList<>();
+    
 
     public BestSellers(){
 
@@ -16,9 +20,12 @@ public class BestSellers implements Subject{
             observers.add(observer);
         }
     }
+    public void removeObserver(Observer observer){
+        observers.remove(observer);
+    }
 
     public void notifyObservers(Book book) {
-        for (Observer observer : observer) {
+        for (Observer observer : observers) {
             observer.update(book);
         }
     }
@@ -27,10 +34,5 @@ public class BestSellers implements Subject{
         Book book = new Book(title, genre, authorFirstName, authorLastName, description);
         bestSellers.add(book);
         notifyObservers(book);
-    }
-
-
-    public List<Book> getBestSellers() {
-        return new ArrayList<>(bestSellers);
     }
 }

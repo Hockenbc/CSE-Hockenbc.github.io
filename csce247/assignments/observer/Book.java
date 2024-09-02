@@ -1,3 +1,6 @@
+/*
+ * By: Courtney Hockenberry
+ */
 package observer;
 
 public class Book{
@@ -28,13 +31,16 @@ public class Book{
     public String getAuthorLastName(){
         return authorLastName;
     }
+    public String getDescription(){
+        return description;
+    }
 
     public String toString(){
-        return String.format("----- %s-----\n%s by: %s %s\n%s",
+        return String.format("\n ----- %s-----\n%s by: %s %s\n%s",
         title,
-        genre,
+        genre.label,
         authorFirstName,
         authorLastName,
-        description);
+        description, "\n");
     }
 }

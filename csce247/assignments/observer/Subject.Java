@@ -1,3 +1,6 @@
+/*
+ * By: Courtney Hockenberry
+ */
 package observer;
 
 public interface Subject {
