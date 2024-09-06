@@ -169,9 +169,6 @@ h5{
     #payment{
         flex-wrap: wrap;
     }
-    #gallery section{
-        flex:30%;
-    }
 
     #main-nav li{
         flex:1;
