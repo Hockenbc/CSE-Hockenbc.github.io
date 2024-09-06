@@ -1,0 +1,181 @@
+:root{
+    --black:black;
+    --maroon:#73000A;
+    --grey: #ECECEC;
+    --white: white;
+
+}
+
+body{
+    background:white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#gateway{
+    background: black;
+}
+#gateway li{
+    list-style:none;
+    border-right: 1px solid #ECECEC;
+    flex:1;
+}
+#gateway a{
+    text-decoration:none;
+    text-align: right;
+    padding:5px;
+    display:block;
+    color:#ECECEC;
+}
+
+#main-header{
+    position: sticky;
+    background: black;
+
+}
+#main-img{
+    position:sticky;
+    top:0;
+    left:0;
+    width:350px;
+}
+#main-nav li{
+    background:#73000A;
+    list-style-type:none;
+    padding-left:0;
+    
+}
+#main-nav a{
+    text-decoration:none;
+    padding:10px;
+    display:block;
+    color:#ECECEC;
+}
+
+#admissions{
+    background: #73000A;
+    color:#ECECEC;
+    width:480px;
+    height:75px;
+    position:absolute;
+    left: 120px;
+    top: 147%;
+    text-align: center;
+    text-decoration: bold;
+}
+#admissions-info{
+    background:white;
+    color:black;
+    width:60%;
+    margin-left:300px;
+    padding: 50px;
+    
+}
+
+#degree-programs{
+    background:#73000A;
+    color:white;
+}
+#degree-info{
+    padding: 70px;
+    margin-left: 5px;
+    margin-top: 120px;
+}
+#reqs{
+    background: black;
+    width: 330px;
+    height:70px;
+    border: 4px white;
+    text-align: center;
+    padding: 1px;
+}
+#reqs a{
+    text-decoration: none;
+    color: white;
+}
+
+#invest {
+    background-color: #ECECEC;
+    height: 430px;
+}
+#invest-header{
+    color: #73000A;
+    text-align: center;
+    padding: 50px;
+    text-decoration: bold;
+}
+#invest-info{
+    color: black;
+    padding: 5px;
+    text-align: center;
+    width:60%;
+    margin-left:300px;
+}
+#fees{
+    margin-top: 50px;
+    background: #73000A;
+    width: 240px;
+    height:64px;
+    border: 4px white;
+    position: relative;
+    left: 33%;
+    padding: 1px;
+}
+#fees a{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+#payment{
+    background-color: white;
+}
+#payment-header{
+    color:#73000A;
+    text-align: center;
+    padding-top: 30px;
+}
+#payment-info{
+    color: black;
+    text-align: center;
+    width:60%;
+    margin-left:300px;
+    padding: 5px;
+}
+
+#payment section{
+    background: white;
+    padding: 5px;
+    margin: 5px;
+    display: block;
+}
+#main-payment a{
+    text-decoration: none;
+    color:black;
+}
+
+
+h5{
+    color: #73000A;
+}
+
+
+
+@media only screen and (min-width:600px){
+    .columns{
+        display:flex;
+    }
+    .one{
+        flex:1;
+    }
+    #payment{
+        flex-wrap: wrap;
+    }
+    #gallery section{
+        flex:30%;
+    }
+
+    #main-nav li{
+        flex:1;
+    }
+    
+    
+}
