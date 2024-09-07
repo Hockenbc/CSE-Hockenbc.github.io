@@ -31,7 +31,11 @@ body{
     border: 4px solid #afafaf;
     border-radius: 15px;
 }
-#work section{
+#assignments section{
+    background: #e5e6eb;
+    text-align: center;
+}
+#project section{
     background: #e5e6eb;
     text-align: center;
 }

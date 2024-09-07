@@ -244,6 +244,7 @@ h5{
     color: white;
     margin-left: 40px;
     margin-right: 60px;
+    flex-wrap: wrap;
 }
 
 #bottom-nav li{
@@ -259,11 +260,13 @@ h5{
     color: white;
     margin-left: 40px;
     margin-right: 60px;
+    flex-wrap: wrap;
 }
 #tools{
     color: white;
     margin-left: 40px;
     margin-right: 60px;
+    flex-wrap: wrap;
 }
 #main-footer{
     background: black;
