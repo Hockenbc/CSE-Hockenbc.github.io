@@ -294,9 +294,6 @@ h5{
 
 @media only screen and (min-width:600px){
 
-    body{
-        width: 40%;
-    }
     .container{
         display:flex;
     }
@@ -307,6 +304,14 @@ h5{
         position:relative;
         width: 100%;
     }
+    #dg-img {
+        display: block;
+        width: 90%;
+      }
+      #main-img{
+        display: block;
+        width: 30%;
+      }
     #nav-top{
         display: block;
         position: absolute;
