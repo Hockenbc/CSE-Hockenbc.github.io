@@ -1,5 +1,5 @@
 :root{
-    --green:rgba(32, 118, 32, 0.63);
+    --green:rgba(81, 107, 60, 0.762);
     --grey:rgba(133, 126, 126, 0.875);
     --khaki:rgb(183, 177, 126);
 }
@@ -62,11 +62,11 @@ body{
 /* Typography*/
 
 h1{
-    color: khaki;
+    color: var(--khaki);
     text-align: center;
 }
 h2{
-    color: rgb(175, 175, 201);
+    color: rgb(94, 76, 53);
     text-align: center;
 }
 h3{
