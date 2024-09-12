@@ -8,7 +8,7 @@ document.getElementById("main-slider").oninput = ()=>{
 let count=0;
 document.getElementById("counter-btn").onclick = ()=>{
     count += 1;
-    document.getElementById("count").innerHTML = count;
+    document.getElementById("counter-btn").innerHTML = count;
 }
 
 document.getElementById("img-btn").onclick = ()=>{
