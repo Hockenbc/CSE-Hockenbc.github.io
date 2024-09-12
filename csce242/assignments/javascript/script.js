@@ -1,5 +1,5 @@
 
-/*or .onchange*/ 
+/*Author: Courtney Hockenberry*/ 
 document.getElementById("main-slider").oninput = ()=>{
     let val = document.getElementById("main-slider").value +"px";
     document.getElementById("slider-img").style.left = val;
