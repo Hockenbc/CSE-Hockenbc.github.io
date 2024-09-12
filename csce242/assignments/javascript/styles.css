@@ -41,6 +41,7 @@ body{
     margin-left: 4px;
     border-color: rgba(240, 230, 140, 0);
     background-color:var(--khaki);
+    font-size: 55px;
 }
 .slider-container{
     width: 100%;
