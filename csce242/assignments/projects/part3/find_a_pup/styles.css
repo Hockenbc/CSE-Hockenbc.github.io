@@ -41,13 +41,11 @@ body{
     padding: 30px;
     margin: 10px;
    
-   
 }
 #assignments section{
-    background: rgba(171, 168, 168, 0.904);
     text-align: center;
-    
 }
+
 #names{
     font-size: 14px;
 }

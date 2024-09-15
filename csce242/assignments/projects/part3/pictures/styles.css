@@ -52,10 +52,12 @@ body{
 #row-1{
     padding: 10px;
     margin: 10px;
+    text-align: center;
 }
 #row-2{
     padding: 10px;
     margin: 10px;
+    text-align: center;
 }
 #footer{
     text-align: center;
