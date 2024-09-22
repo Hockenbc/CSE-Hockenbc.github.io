@@ -1,12 +1,16 @@
 /*Author: Courtney Hockenberry*/
+:root{
+    --navy: #374c79;
+}
 body{
     background: white;
     font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
     margin: 0;
 }
 #main-nav{
     position: relative;
-    background: white;
+    background: var(--navy);
     width: 100%;
 }
 
@@ -48,6 +52,7 @@ body{
     width: 60%;
     margin-left: 18%;
     padding: 30px;
+    font-size: 18px;
 }
 #contact-us{
     border: 2px solid grey;
@@ -103,11 +108,20 @@ input{
 
 
 #footer{
-    text-align: center;
-    background: grey;
-    height: 20px;
+    background: var(--navy);
+    height: 45px;
     font-size: 15px;
     color: white;
+    padding-top: 10px;
+}
+#footer-copy{
+   position: relative;
+   text-align: center;
+   top: -105%;
+}
+#logo{
+    text-align: left;
+    position: relative;
 }
 hr{
     width: 80%;

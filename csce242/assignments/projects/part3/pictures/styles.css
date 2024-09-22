@@ -1,12 +1,16 @@
 /*Author: Courtney Hockenberry*/
+:root{
+    --navy: #374c79;
+}
 body{
     background: white;
     font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
     margin: 0;
 }
 #main-nav{
     position: relative;
-    background: white;
+    background: var(--navy);
     width: 100%;
 }
 
@@ -38,11 +42,20 @@ body{
     max-width: 100%;
     position: relative;
     margin: 0;
+    background: grey;
   }
 #slide-1{
-    width: 100%;
+    width: 30%;
     position: relative;
-    height: 300px;
+    margin-left: 35%;
+    
+}
+#sent-puppies{
+    width: 70%;
+    text-align: center;
+    margin-left: 15%;
+    padding-top: 10px;
+    font-size: 18px;
 }
 #year{
     text-align: center;
@@ -61,11 +74,21 @@ body{
     text-align: center;
 }
 #footer{
-    text-align: center;
-    background: grey;
-    height: 20px;
+    background: var(--navy);
+    height: 45px;
     font-size: 15px;
     color: white;
+    padding-top: 10px;
+
+}
+#footer-copy{
+   position: relative;
+   text-align: center;
+   top: -105%;
+}
+#logo{
+    text-align: left;
+    position: relative;
 }
 
 @media only screen and (min-width:600px){
