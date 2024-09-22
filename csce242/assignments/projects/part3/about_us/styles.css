@@ -31,12 +31,12 @@ body{
     list-style-type: none;
     display: grid;
     text-align: center;
-    background: rgb(165, 164, 164);
+    background: rgb(165, 164, 164); 
     position: relative;
     padding: 5px;
     margin-right: 35px;
     border-radius: 15px;
-    padding: 5px;
+    margin-top: 10px;
 }
 
 #about-us{
@@ -50,7 +50,7 @@ body{
 #about-us-info{
     text-align: center;
     width: 60%;
-    margin-left: 18%;
+    margin-left: 14%;
     padding: 30px;
     font-size: 18px;
 }
@@ -60,29 +60,30 @@ body{
     width: 70%;
     position: relative;
     left: 15%;
+    margin-bottom: 10px;
 }
 #contact-header{
     text-align: center;
 }
 #first-name{
     position: relative;
-    left: 30%;
+    left: 11%;
 }
 #last-name{
     position: relative;
-    left: 30%;
+    left: 11%;
 }
 #email{
     position: relative;
-    left: 30%; 
+    left: 11%; 
 }
 #email-input{
     position: relative;
-    left: -30%;
+    left: -11%;
 }
 #additional-info{
     position: relative;
-    left: 30%;
+    left: 11%;
 }
 #text-input{
     position: relative;
@@ -92,7 +93,7 @@ body{
 input{
     margin: 2px;
     display: block;
-    width: 450px;
+    width: 250px;
 }
 #submit{
     padding-top: 30px;
@@ -103,7 +104,7 @@ input{
     text-align: center;
     width: 200px;
     height: 35px;
-    left: 42%;
+    left: 20%;
 }
 
 
@@ -139,10 +140,43 @@ hr{
     .grid-container{
         display:grid;
     }
+    .grid-container li{
+        padding: 5px;
+        margin-right: 35px;
+        border-radius: 15px;
+        padding: 5px; 
+    }
     .one{
         flex:1;
     }
 
+
+    #first-name{
+        left: 30%;
+    }
+    #last-name{
+        left: 30%;
+    }
+    #email{
+        left: 30%; 
+    }
+    #email-input{
+        left: -30%;
+    }
+    #additional-info{
+        left: 30%;
+    }
+    input{
+        width: 450px;
+    }
+    #submission{
+        left: 42%;
+    }
+
+
+    #about-us-info{
+        margin-left: 18%;
+    }
     #main-nav li{
         flex:1;
     }
