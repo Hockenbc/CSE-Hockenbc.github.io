@@ -13,6 +13,12 @@ body{
     background: var(--navy);
     width: 100%;
 }
+#toggle-nav div {
+    width:25px;
+    height:2px;
+    background-color:black;
+    margin:6px 0;
+  }
 
 .grid-container{
     top: 0;
@@ -83,7 +89,13 @@ body{
 #puppy-img{
     width: 100%;
 }
-
+.hidden {
+    display:none;
+  }
+  
+  .hidden-small {
+    display:none;
+  }
 
 
 
@@ -95,6 +107,9 @@ body{
     .container{
         display: flex;
     }
+    #toggle-nav {
+        display:none;
+      }
     .grid-container{
         display:grid;
     }
@@ -118,5 +133,8 @@ body{
     #main-nav li{
         flex:1;
     }
+    .hidden-small {
+        display:flex;
+      }
 
 }

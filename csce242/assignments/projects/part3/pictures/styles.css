@@ -13,6 +13,12 @@ body{
     background: var(--navy);
     width: 100%;
 }
+#toggle-nav div {
+    width:25px;
+    height:2px;
+    background-color:black;
+    margin:6px 0;
+  }
 
 .grid-container{
     top: 0;
@@ -90,6 +96,13 @@ body{
     text-align: left;
     position: relative;
 }
+.hidden {
+    display:none;
+  }
+  
+  .hidden-small {
+    display:none;
+  }
 
 @media only screen and (min-width:600px){
     .columns{
@@ -99,6 +112,9 @@ body{
     .container{
         display: flex;
     }
+    #toggle-nav {
+        display:none;
+      }
     .grid-container{
         display:grid;
     }
@@ -115,5 +131,8 @@ body{
     #main-nav li{
         flex:1;
     }
+    .hidden-small {
+        display:flex;
+      }
 
 }
