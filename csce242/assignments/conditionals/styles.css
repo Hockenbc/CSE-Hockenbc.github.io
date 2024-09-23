@@ -1,3 +1,4 @@
+/*Author: Courtney Hockenberry*/
 :root{
     --peach: rgb(201, 179, 159);
     --blue: rgb(40, 90, 84);
@@ -47,13 +48,7 @@ body{
     padding: 10px;
 }
 
-input[type="range"] ::-webkit-slider-thumb{
-    -webkit-appearance: none;
-    width: 20px;
-    height: 20px;
-    margin-top: -5px;
-    background-color: var(--pink);
-}
+
 .slider{
     appearance: none;
     width: 90%;
@@ -66,9 +61,26 @@ input[type="range"] ::-webkit-slider-thumb{
 
 #pic-choose{
     width: 60%;
+    
     background: rgb(231, 219, 221);
     margin-left: 20%;
-    padding: 10px;
+    padding: 40px;
+}
+#small{
+    position: absolute;
+    left: 30%;
+}
+#medium{
+    position: absolute;
+    left: 34%;
+}
+#large{
+    position: absolute;
+    left: 39%;
+}
+img{
+    position: relative;
+    margin-top: 30px;
 }
 .hide{
     display: none;
@@ -84,6 +96,9 @@ h2{
     color: var(--pink);
     text-align: center;
 }
+h3{
+    text-align: center;
+}
 
 #footer{
     font-size: 12px;
@@ -91,9 +106,6 @@ h2{
     margin-top: -20px;
     position: relative;
     padding: 10px;
-}
-img{
-    
 }
 
   
