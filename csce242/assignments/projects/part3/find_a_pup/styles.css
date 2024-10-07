@@ -19,6 +19,25 @@ body{
     background-color:black;
     margin:6px 0;
   }
+  #nav-items li{ 
+    position: relative;
+    transition: transform 0.3s ease;
+}
+#nav-items li:hover{
+    transform: translateY(-3px);
+}
+
+#nav-items a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+#nav-items a:hover{
+    color: #dec74a;
+}
 
 .grid-container{
     top: 0;
@@ -37,7 +56,7 @@ body{
     list-style-type: none;
     display: grid;
     text-align: center;
-    background: rgb(165, 164, 164); 
+    background: rgb(107, 123, 164); 
     position: relative;
     padding: 5px;
     margin-right: 35px;
@@ -50,16 +69,25 @@ body{
 }
 #puppy-info{
     width: 70%;
-    text-align: center;
+    justify-content: center;
     margin-left: 13%;
     padding: 10px;
 }
+
+#species{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 /*figure out howo to make it flex 3 per row 2 rows*/
 #species section{
-    padding: 30px;
+    flex: 1 1 30%;
+    box-sizing: border-box;
+    padding: 15px;
     margin: 10px;
    
-}/*dont think this assignments section should be here*/
+}
+/*dont think this assignments section should be here*/
 #assignments section{
     text-align: center;
 }
@@ -85,9 +113,13 @@ body{
 #logo{
     text-align: left;
     position: relative;
+    display: block;
+    margin-left: 20px;
+    padding-top: 1px;
 }
 #puppy-img{
     width: 100%;
+    height: auto;
 }
 .hidden {
     display:none;
@@ -97,7 +129,10 @@ body{
     display:none;
   }
 
-
+p{
+    font-size: 18px;
+    line-height: 1.7;
+}
 
 
 @media only screen and (min-width:600px){
