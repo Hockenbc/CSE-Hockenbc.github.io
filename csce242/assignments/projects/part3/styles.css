@@ -82,7 +82,7 @@ body{
 #main-info{
     padding: 20px;
     margin: 30px;
-    text-align: center;
+    justify-content: center;
     margin-left: 5%;
     position: relative;
     font-size: 20px;
@@ -135,6 +135,10 @@ body{
   
   .hidden-small {
     display:none;
+  }
+
+  h1{
+    text-align: center;
   }
 
 
