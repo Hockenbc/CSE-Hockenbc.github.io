@@ -1,0 +1,87 @@
+/*Author: Courtney Hockenberry*/
+:root{
+    --pearl: #f8e2da;
+    --pink: #ff77aa;
+    --text-color: #fff;
+    --overlay-bg: rgba(0, 0, 0, 0.5);
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--pearl);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.ice-cream {
+    position: relative;
+    margin: 5px;
+    width: 200px;
+    height: 150px;
+  }
+
+.ice-cream img{
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 1px;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 250px;
+    height: 50%;
+    background: var(--overlay-bg);
+    opacity: 0;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 1px;
+}
+.ice-cream:hover .overlay{
+    opacity: 1;
+}
+
+.overlay h3{
+    margin: 0;
+    font-size: 14px;
+}
+
+#ice-cream-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+h1{
+    text-align: center;
+    color: var(--pink);
+    font-size: 30px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+#footer{
+    text-align: center;
+}
+  
+  /* Larger Resolutions */
+@media (min-width: 600px) {
+  
+    .ice-cream {
+        flex: 22%;
+      }
+}
+
+
