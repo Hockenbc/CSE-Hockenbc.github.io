@@ -4,7 +4,7 @@ document.querySelector("#toggle-nav").onclick = () => {
 
 const getPuppies = async () => {
     try { 
-        return (await fetch("https://hockenbc.github.io/part6/find_a_pup/json/puppies.json")).json();
+        return (await fetch("https://hockenbc.github.io/json/puppies.json")).json();
     } catch (error) {
         console.log(error);
     }
