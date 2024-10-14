@@ -77,39 +77,33 @@ body{
 #puppy-section{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .puppy {
-    flex: 1 1 30%;
-    box-sizing: border-box;
-    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 10px;
-    border: 1px solid lightgray;
-    border-radius: 8px;
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    width: 200px;
+    box-sizing: border-box;
 }
 .puppy img {
-    width: 100%;
+    width: 200px;
     height: auto;
-    margin-bottom: 10px;
     border-radius: 6px;
 }
 
-.puppy .overlay {
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
-    padding: 10px;
-    border-radius: 4px;
+.puppy h1, .puppy p {
+    margin: 5px 0;
     text-align: center;
 }
-
-
-/*dont think this assignments section should be here*/
-#assignments section{
-    text-align: center;
+#species{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
 
 #footer{
     background: var(--navy);
@@ -148,6 +142,8 @@ p{
 @media only screen and (min-width:600px){
     .columns{
         display:flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
     .container{
         display: flex;
@@ -164,13 +160,19 @@ p{
         border-radius: 15px;
         padding: 5px; 
     }
-    .one{
-        flex:1;
-    }
-    #assignments{
+
+    #puppy-section{
+        display:flex;
         flex-wrap: wrap;
     }
 
+    .puppy{
+        flex: 30%;
+    }
+
+    #assignments{
+        flex-wrap: wrap;
+    }
 
     #main-nav li{
         flex:1;

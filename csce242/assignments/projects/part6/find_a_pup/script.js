@@ -1,3 +1,4 @@
+/*Author: Courtney Hockenberry */
 document.querySelector("#toggle-nav").onclick = () => {
     document.getElementById("nav-items").classList.toggle("hidden-small");
 };
@@ -16,7 +17,7 @@ const showPuppies = async () => {
     //create a section for each puppy
     puppyData.forEach((puppy) => {
         const section = document.createElement("section");
-        section.classList.add("one");
+        section.classList.add("puppy");
 
         //create and append the puppy image
         const img= document.createElement("img");
