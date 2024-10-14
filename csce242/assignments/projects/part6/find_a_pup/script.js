@@ -4,7 +4,7 @@ document.querySelector("#toggle-nav").onclick = () => {
 
 const getPuppies = async () => {
     try { 
-        return (await fetch("https://hockenbc.github.io/json/puppies.json")).json();
+        return (await fetch("https://Hockenbc.github.io/json/puppies.json")).json();
     } catch (error) {
         console.log(error);
     }
@@ -25,7 +25,7 @@ const showPuppies = async () => {
         img.id = "puppy-img";
         section.append(img);
 
-        //create a dic for the name and append the name
+        //create a div for the name and append the name
         const nameDiv = document.createElement("div");
         nameDiv.id= "names";
         const h1 = document.createElement("h1");
