@@ -1,0 +1,167 @@
+/*Author: Courtney Hockenberry*/
+:root{
+    --navy: #374c79;
+}
+body{
+    background: white;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+}
+#main-nav{
+    position: relative;
+    background: var(--navy);
+    width: 100%;
+}
+#toggle-nav div {
+    width:25px;
+    height:2px;
+    background-color:black;
+    margin:6px 0;
+  }
+  #nav-items li{ 
+    position: relative;
+    transition: transform 0.3s ease;
+}
+#nav-items li:hover{
+    transform: translateY(-3px);
+}
+
+#nav-items a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+#nav-items a:hover{
+    color: #dec74a;
+}
+
+.grid-container{
+    top: 0;
+    position: relative;
+    display:grid;
+    padding: 3px;
+    left: 0;
+    width: 100%;
+}
+.grid-container a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+.grid-container li{
+    list-style-type: none;
+    display: grid;
+    text-align: center;
+    background: rgb(107, 123, 164); 
+    position: relative;
+    padding: 5px;
+    margin-right: 35px;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: 0;
+    background: grey;
+  }
+#slide-1{
+    width: 30%;
+    position: relative;
+    margin-left: 35%;
+    
+}
+#sent-puppies{
+    width: 70%;
+    justify-content: center;
+    margin-left: 15%;
+    padding-top: 10px;
+    font-size: 18px;
+}
+#year{
+    text-align: center;
+    width: 100%;
+    position: relative;
+    font-size: 20px;
+}
+#row-1{
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+#row-2{
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+#footer{
+    background: var(--navy);
+    height: 45px;
+    font-size: 15px;
+    color: white;
+    padding-top: 10px;
+
+}
+#footer-copy{
+   position: relative;
+   text-align: center;
+   top: -105%;
+}
+#logo{
+    text-align: left;
+    position: relative;
+    display: block;
+    margin-left: 20px;
+    padding-top: 1px;
+}
+.hidden {
+    display:none;
+  }
+  
+  .hidden-small {
+    display:none;
+  }
+
+  p{
+    line-height: 1.8;
+  }
+  h2{
+    text-align: center;
+  }
+
+@media only screen and (min-width:600px){
+    .columns{
+        display:flex;
+    }
+    
+    .container{
+        display: flex;
+    }
+    #toggle-nav {
+        display:none;
+      }
+    .grid-container{
+        display:grid;
+    }
+    .grid-container li{
+        padding: 5px;
+        margin-right: 35px;
+        border-radius: 15px;
+        padding: 5px; 
+    }
+    .one{
+        flex:1;
+    }
+
+    #main-nav li{
+        flex:1;
+    }
+    .hidden-small {
+        display:flex;
+      }
+
+}
